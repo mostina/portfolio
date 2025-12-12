@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alessandra — Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --green-soft: #cfe7dc;
+      --green-accent: #8bbfa7;
+      --green-dark: #3e6f5e;
+      --bg-main: #f6faf8;
+      --text-main: #243833;
+      --card-bg: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 80px 20px 60px;
+      text-align: center;
+      background: linear-gradient(180deg, var(--green-soft), var(--bg-main));
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 12px;
+      color: var(--green-dark);
+    }
+
+    header p {
+      max-width: 680px;
+      margin: 0 auto;
+      font-size: 1.05rem;
+      opacity: 0.85;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 20px 100px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+    }
+
+    .project-card {
+      background: var(--card-bg);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+    }
+
+    .project-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--green-dark);
+      background: var(--green-soft);
+      padding: 6px 12px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+      width: fit-content;
+    }
+
+    .project-card h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+    }
+
+    .project-card p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+      margin-bottom: 22px;
+    }
+
+    .project-footer {
+      margin-top: auto;
+      font-size: 0.85rem;
+      color: var(--green-dark);
+      opacity: 0.8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.8rem;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Alessandra</h1>
+    <p>
+      Creative Technologist focused on Unity, 3D experiences and interactive systems.
+      Here you can find a selection of my projects.
+    </p>
+  </header>
+
+  <main>
+    <section class="projects">
+
+      <article class="project-card">
+        <span class="project-tag">Immersive Experience</span>
+        <h2>Doctor Who — Virtual Museum</h2>
+        <p>
+          A cinematic simulation of an immersive museum experience inspired by Doctor Who.
+          Built in Unity using Cinemachine, environmental storytelling and interactive UI panels
+          to guide the visitor through artworks and narrative moments.
+        </p>
+        <div class="project-footer">Unity · Cinemachine · World-space UI</div>
+      </article>
+
+      <article class="project-card">
+        <span class="project-tag">Interactive Application</span>
+        <h2>ArtTrack</h2>
+        <p>
+          An interactive application for tracking and visualizing artworks logistics.
+          ArtTrack simulates museum storage, shipments and environmental data through
+          3D containers connected to a digital inventory system.
+        </p>
+        <div class="project-footer">Unity · 3D · IoT · Data Visualization</div>
+      </article>
+
+      <article class="project-card">
+        <span class="project-tag">Game</span>
+        <h2>Mushroom Mess</h2>
+        <p>
+          A cute and minimal puzzle game where players restore the correct colors of mushrooms.
+          Focused on clean UI, gentle animations and intuitive mechanics for mobile platforms.
+        </p>
+        <div class="project-footer">Unity · Game Design · Mobile</div>
+      </article>
+
+    </section>
+
+    <section class="videos" style="margin-top:80px;">
+      <h2 style="font-family:'Playfair Display',serif; font-size:2rem; color:var(--green-dark); margin-bottom:32px; text-align:center;">Project Videos</h2>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:40px;">
+
+        <div class="project-card">
+          <h3 style="font-family:'Playfair Display',serif; font-size:1.2rem; margin-bottom:12px;">Doctor Who — Virtual Museum</h3>
+          <div style="background:var(--green-soft); border-radius:14px; aspect-ratio:16/9; display:flex; align-items:center; justify-content:center; color:var(--green-dark); font-size:0.85rem;">
+            Video coming soon
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3 style="font-family:'Playfair Display',serif; font-size:1.2rem; margin-bottom:12px;">ArtTrack</h3>
+          <div style="background:var(--green-soft); border-radius:14px; aspect-ratio:16/9; display:flex; align-items:center; justify-content:center; color:var(--green-dark); font-size:0.85rem;">
+            Video coming soon
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3 style="font-family:'Playfair Display',serif; font-size:1.2rem; margin-bottom:12px;">Mushroom Mess</h3>
+          <div style="background:var(--green-soft); border-radius:14px; aspect-ratio:16/9; display:flex; align-items:center; justify-content:center; color:var(--green-dark); font-size:0.85rem;">
+            Video coming soon
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="contact" style="margin-top:80px; text-align:center;">
+      <h2 style="font-family:'Playfair Display',serif; font-size:2rem; color:var(--green-dark); margin-bottom:16px;">About & Contact</h2>
+      <p style="max-width:640px; margin:0 auto 24px; font-size:0.95rem; opacity:0.85;">
+        I am a Creative Technologist interested in interactive experiences, digital heritage and game design.
+        Feel free to reach out for collaborations, projects or opportunities.
+      </p>
+      <p style="font-size:0.9rem;">
+        📧 your.email@example.com · 💼 LinkedIn · 💻 GitHub
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 — Alessandra · Portfolio
+  </footer>
+
+</body>
+</html>
